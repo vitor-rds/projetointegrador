@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profissionais Disponíveis</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <header>
+    <h1>Saúde & Fitness</h1>
+    <nav>
+      <a href="painel-cliente.html">Painel</a>
+      <a href="#">Meus Dados</a>
+      <a href="#">Sair</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="title">
+      <h2>Profissionais Disponíveis</h2>
+      <p>Veja a lista de nutricionistas e personal trainers ativos e escolha o profissional ideal para você.</p>
+    </div>
+
+    <!-- Barra de Filtros (UI sem lógica JS) -->
+    <section class="filters" aria-label="Filtros de busca">
+      <div class="field half">
+        <label for="busca">Buscar por nome, cidade ou curso</label>
+        <input type="text" id="busca" placeholder="Ex.: Ana, São Paulo, Nutrição Esportiva" />
+      </div>
+
+      <div class="field third">
+        <label for="especialidade">Especialidade</label>
+        <select id="especialidade">
+          <option value="">Todas</option>
+          <option>Nutricionista</option>
+          <option>Personal Trainer</option>
+        </select>
+      </div>
+
+      <div class="field third">
+        <label for="atendimento">Atendimento</label>
+        <select id="atendimento">
+          <option value="">Qualquer</option>
+          <option>Online</option>
+          <option>Presencial</option>
+          <option>Híbrido</option>
+        </select>
+      </div>
+
+      <div class="field third">
+        <label for="ordenar">Ordenar por</label>
+        <select id="ordenar">
+          <option value="relevancia">Relevância</option>
+          <option value="menor_preco">Menor preço</option>
+          <option value="maior_preco">Maior preço</option>
+          <option value="avaliacao">Melhor avaliação</option>
+          <option value="disponibilidade">Próxima disponibilidade</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" type="button">Aplicar Filtros</button>
+        <button class="btn btn-neutral" type="button">Limpar</button>
+      </div>
+    </section>
+
+    <!-- Lista de Profissionais (dados fictícios) -->
+    <section class="grid" aria-label="Resultados de profissionais">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="avatar" aria-hidden="true">AN</div>
+        <div class="info">
+          <div class="row-top">
+            <div>
+              <div class="name">Ana Nogueira</div>
+              <div class="badges">
+                <span class="badge">Nutricionista</span>
+                <span class="badge green">Ativo</span>
+                <span class="badge gray">Online • Presencial</span>
+              </div>
+            </div>
+            <div class="badge gold" title="Avaliação média">★ 4,9 (132)</div>
+          </div>
+
+          <div class="row-mid">
+            <div class="meta"><strong>CRN:</strong> CRN-3 23876</div>
+            <div class="meta"><strong>Experiência:</strong> 7 anos</div>
+            <div class="meta"><strong>Cidade:</strong> São Paulo/SP</div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Nutrição Esportiva</span>
+            <span class="tag">Emagrecimento</span>
+            <span class="tag">Performance</span>
+            <span class="tag">Currículo disponível</span>
+          </div>
+
+          <div class="row-bottom">
+            <div>
+              <div class="meta"><strong>Próximo horário:</strong> 10/09 • 14:00</div>
+              <div class="price">R$ 120 / sessão</div>
+            </div>
+            <div class="actions-row">
+              <a href="#" class="btn btn-outline">Ver Perfil</a>
+              <a href="#" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="avatar" aria-hidden="true">JP</div>
+        <div class="info">
+          <div class="row-top">
+            <div>
+              <div class="name">João Pereira</div>
+              <div class="badges">
+                <span class="badge">Personal Trainer</span>
+                <span class="badge green">Ativo</span>
+                <span class="badge gray">Presencial</span>
+              </div>
+            </div>
+            <div class="badge gold">★ 4,7 (89)</div>
+          </div>
+
+          <div class="row-mid">
+            <div class="meta"><strong>CREF:</strong> CREF 098765-G/SP</div>
+            <div class="meta"><strong>Experiência:</strong> 5 anos</div>
+            <div class="meta"><strong>Cidade:</strong> São Paulo/SP</div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Hipertrofia</span>
+            <span class="tag">Treino Funcional</span>
+            <span class="tag">Reabilitação</span>
+            <span class="tag">Primeira avaliação grátis</span>
+          </div>
+
+          <div class="row-bottom">
+            <div>
+              <div class="meta"><strong>Próximo horário:</strong> 11/09 • 08:30</div>
+              <div class="price">R$ 90 / sessão</div>
+            </div>
+            <div class="actions-row">
+              <a href="#" class="btn btn-outline">Ver Perfil</a>
+              <a href="#" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="avatar" aria-hidden="true">CL</div>
+        <div class="info">
+          <div class="row-top">
+            <div>
+              <div class="name">Carla Lima</div>
+              <div class="badges">
+                <span class="badge">Nutricionista</span>
+                <span class="badge green">Ativo</span>
+                <span class="badge gray">Online</span>
+              </div>
+            </div>
+            <div class="badge gold">★ 4,8 (211)</div>
+          </div>
+
+          <div class="row-mid">
+            <div class="meta"><strong>CRN:</strong> CRN-8 11223</div>
+            <div class="meta"><strong>Experiência:</strong> 10 anos</div>
+            <div class="meta"><strong>Cidade:</strong> Curitiba/PR</div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Low Carb</span>
+            <span class="tag">Saúde da Mulher</span>
+            <span class="tag">Nutrição Clínica</span>
+          </div>
+
+          <div class="row-bottom">
+            <div>
+              <div class="meta"><strong>Próximo horário:</strong> 09/09 • 19:00</div>
+              <div class="price">R$ 140 / sessão</div>
+            </div>
+            <div class="actions-row">
+              <a href="#" class="btn btn-outline">Ver Perfil</a>
+              <a href="#" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="avatar" aria-hidden="true">RM</div>
+        <div class="info">
+          <div class="row-top">
+            <div>
+              <div class="name">Rafael Martins</div>
+              <div class="badges">
+                <span class="badge">Personal Trainer</span>
+                <span class="badge green">Ativo</span>
+                <span class="badge gray">Online • Presencial</span>
+              </div>
+            </div>
+            <div class="badge gold">★ 4,6 (64)</div>
+          </div>
+
+          <div class="row-mid">
+            <div class="meta"><strong>CREF:</strong> CREF 045321-G/RJ</div>
+            <div class="meta"><strong>Experiência:</strong> 8 anos</div>
+            <div class="meta"><strong>Cidade:</strong> Rio de Janeiro/RJ</div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Condicionamento</span>
+            <span class="tag">Perda de Peso</span>
+            <span class="tag">Treino em Casa</span>
+          </div>
+
+          <div class="row-bottom">
+            <div>
+              <div class="meta"><strong>Próximo horário:</strong> 10/09 • 07:00</div>
+              <div class="price">R$ 80 / sessão</div>
+            </div>
+            <div class="actions-row">
+              <a href="#" class="btn btn-outline">Ver Perfil</a>
+              <a href="#" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="avatar" aria-hidden="true">TB</div>
+        <div class="info">
+          <div class="row-top">
+            <div>
+              <div class="name">Thiago Barbosa</div>
+              <div class="badges">
+                <span class="badge">Personal Trainer</span>
+                <span class="badge green">Ativo</span>
+                <span class="badge gray">Híbrido</span>
+              </div>
+            </div>
+            <div class="badge gold">★ 4,9 (154)</div>
+          </div>
+
+          <div class="row-mid">
+            <div class="meta"><strong>CREF:</strong> CREF 077201-G/SP</div>
+            <div class="meta"><strong>Experiência:</strong> 6 anos</div>
+            <div class="meta"><strong>Cidade:</strong> Campinas/SP</div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Musculação Avançada</span>
+            <span class="tag">Funcional</span>
+            <span class="tag">Pós-Lesão</span>
+          </div>
+
+          <div class="row-bottom">
+            <div>
+              <div class="meta"><strong>Próximo horário:</strong> 12/09 • 18:00</div>
+              <div class="price">R$ 95 / sessão</div>
+            </div>
+            <div class="actions-row">
+              <a href="#" class="btn btn-outline">Ver Perfil</a>
+              <a href="#" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="avatar" aria-hidden="true">GS</div>
+        <div class="info">
+          <div class="row-top">
+            <div>
+              <div class="name">Gabriela Souza</div>
+              <div class="badges">
+                <span class="badge">Nutricionista</span>
+                <span class="badge green">Ativo</span>
+                <span class="badge gray">Online</span>
+              </div>
+            </div>
+            <div class="badge gold">★ 4,5 (47)</div>
+          </div>
+
+          <div class="row-mid">
+            <div class="meta"><strong>CRN:</strong> CRN-2 55601</div>
+            <div class="meta"><strong>Experiência:</strong> 3 anos</div>
+            <div class="meta"><strong>Cidade:</strong> Porto Alegre/RS</div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Vegetariana/Vegana</span>
+            <span class="tag">Educação Alimentar</span>
+          </div>
+
+          <div class="row-bottom">
+            <div>
+              <div class="meta"><strong>Próximo horário:</strong> 09/09 • 20:30</div>
+              <div class="price">R$ 75 / sessão</div>
+            </div>
+            <div class="actions-row">
+              <a href="#" class="btn btn-outline">Ver Perfil</a>
+              <a href="#" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Saúde & Fitness — Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

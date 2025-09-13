@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Cliente</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2e86de, #00b894);
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeaa7;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .welcome {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .welcome h2 {
+      font-size: 28px;
+      color: #2e86de;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #00b894;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #2e86de;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00b894;
+    }
+
+    footer {
+      background: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Saúde & Fitness</h1>
+    <nav>
+      <a href="#">Gerenciar Conta</a>
+      <a href="#">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="welcome">
+      <h2>Olá, Maria 👋</h2>
+      <p>Bem-vinda ao seu painel! Aqui você pode acompanhar suas consultas e explorar nossos profissionais.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Meus Dados</h3>
+        <p>Gerencie suas informações pessoais, altere senha e mantenha seus dados atualizados.</p>
+        <a href="#" class="btn">Gerenciar Conta</a>
+      </div>
+
+      <div class="card">
+        <h3>Profissionais Disponíveis</h3>
+        <p>Veja a lista de nutricionistas e personal trainers ativos e escolha o profissional ideal para você.</p>
+        <a href="#" class="btn">Explorar Profissionais</a>
+      </div>
+
+      <div class="card">
+        <h3>Minhas Consultas</h3>
+        <p>Acompanhe suas consultas já agendadas, veja horários e faça alterações quando necessário.</p>
+        <a href="#" class="btn">Ver Consultas</a>
+      </div>
+
+      <div class="card">
+        <h3>Agendar Nova Consulta</h3>
+        <p>Encontre o horário disponível e marque sua próxima consulta com apenas alguns cliques.</p>
+        <a href="#" class="btn">Agendar Agora</a>
+      </div>
+
+      <div class="card">
+        <h3>Meu Plano</h3>
+        <p>Acompanhe seu plano de assinatura, pagamentos e histórico financeiro de forma prática.</p>
+        <a href="#" class="btn">Ver Plano</a>
+      </div>
+
+      <div class="card">
+        <h3>Meus Treinos</h3>
+        <p>Acesse seus treinos personalizados, dicas de exercícios e acompanhe sua evolução.</p>
+        <a href="#" class="btn">Ver Treinos</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saúde & Fitness - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>

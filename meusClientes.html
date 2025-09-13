@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Clientes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background: #2c3e50;
+      color: white;
+    }
+    tr:hover {
+      background: #f1f1f1;
+    }
+    a {
+      color: #27ae60;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meus Clientes</h1>
+  </header>
+
+  <main>
+    <h2>Lista de clientes atendidos</h2>
+    <p style="text-align:center;">Acompanhe o histórico e informações de cada cliente.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Última Consulta</th>
+          <th>Tipo</th>
+          <th>Histórico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maria Silva</td>
+          <td>12/09/2025</td>
+          <td>Nutrição</td>
+          <td><a href="#">Ver Histórico</a></td>
+        </tr>
+        <tr>
+          <td>João Pereira</td>
+          <td>10/09/2025</td>
+          <td>Treino</td>
+          <td><a href="#">Ver Histórico</a></td>
+        </tr>
+        <tr>
+          <td>Ana Souza</td>
+          <td>05/09/2025</td>
+          <td>Avaliação Física</td>
+          <td><a href="#">Ver Histórico</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Nova Consulta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    select, input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+    }
+    button {
+      padding: 12px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agendar Nova Consulta</h1>
+  </header>
+
+  <main>
+    <h2>Marque sua próxima consulta</h2>
+    <p>Encontre o horário disponível e agende com apenas alguns cliques.</p>
+
+    <form>
+      <div>
+        <label for="profissional">Escolha o profissional:</label>
+        <select id="profissional" required>
+          <option value="">Selecione...</option>
+          <option value="nutricionista1">Nutricionista - Ana Souza</option>
+          <option value="nutricionista2">Nutricionista - Carlos Oliveira</option>
+          <option value="personal1">Personal Trainer - João Lima</option>
+          <option value="personal2">Personal Trainer - Maria Fernandes</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="tipo">Tipo de consulta:</label>
+        <select id="tipo" required>
+          <option value="">Selecione...</option>
+          <option value="nutricao">Nutrição</option>
+          <option value="treino">Treino</option>
+          <option value="avaliacao">Avaliação Física</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="data">Data da consulta:</label>
+        <input type="date" id="data" required>
+      </div>
+
+      <div>
+        <label for="hora">Horário:</label>
+        <select id="hora" required>
+          <option value="">Selecione...</option>
+          <option value="08:00">08:00</option>
+          <option value="09:00">09:00</option>
+          <option value="10:00">10:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+        </select>
+      </div>
+
+      <button type="submit">Agendar Consulta</button>
+    </form>
+  </main>
+</body>
+</html>

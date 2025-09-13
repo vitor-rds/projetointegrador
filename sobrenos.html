@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Nós</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #2e86de, #00b894);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffeaa7;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      color: #2e86de;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    /* Form Section */
+    .form-section {
+      background: white;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-section h3 {
+      text-align: center;
+      color: #00b894;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      background: #2e86de;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00b894;
+    }
+
+    /* Footer */
+    footer {
+      background: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nosso Projeto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.php">Início</a></li>
+        <li><a href="planos.php">Planos</a></li>
+        <li><a href="sobre.php">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Quem Somos</h2>
+    <p>
+      Somos jovens programadores, alunos do <strong>SENAC</strong>, apaixonados por tecnologia e inovação.  
+      Nosso objetivo é criar soluções digitais sob medida para empresas, ajudando a modernizar processos, 
+      otimizar tarefas e oferecer sistemas que realmente fazem a diferença no dia a dia.
+    </p>
+  </section>
+
+  <section class="form-section">
+    <h3>Entre em Contato</h3>
+    <form action="mailto:exemplo@email.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Digite seu nome" required>
+      <input type="email" name="email" placeholder="Digite seu e-mail" required>
+      <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por alunos do SENAC</p>
+  </footer>
+</body>
+</html>

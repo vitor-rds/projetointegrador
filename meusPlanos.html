@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Planos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    main {
+      padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    .planos {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      color: #2c3e50;
+    }
+    .preco {
+      font-size: 24px;
+      font-weight: bold;
+      color: #27ae60;
+      margin: 15px 0;
+    }
+    .detalhes {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 12px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Conheça Nossos Planos</h1>
+  </header>
+
+  <main>
+    <h2>Escolha o plano ideal para você</h2>
+
+    <div class="planos">
+      <div class="card">
+        <h3>Plano Mensal</h3>
+        <p class="preco">R$ 99,90</p>
+        <p class="detalhes">Acesso completo à plataforma por 30 dias.<br>Ideal para quem quer experimentar.</p>
+        <button>Assinar</button>
+      </div>
+
+      <div class="card">
+        <h3>Plano Trimestral</h3>
+        <p class="preco">R$ 269,90</p>
+        <p class="detalhes">3 meses de acesso com desconto especial.<br>Mais economia para quem treina firme.</p>
+        <button>Assinar</button>
+      </div>
+
+      <div class="card">
+        <h3>Plano Anual</h3>
+        <p class="preco">R$ 899,90</p>
+        <p class="detalhes">12 meses de acesso ilimitado.<br>A melhor opção para resultados duradouros.</p>
+        <button>Assinar</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

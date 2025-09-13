@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Consultas</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #2e86de, #00b894);
+      color: #fff;
+      padding: 14px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 20px; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 18px;
+    }
+    nav a:hover { color: #ffeaa7; }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .title {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    .title h2 {
+      font-size: 26px;
+      color: #2e86de;
+    }
+    .title p { color: #555; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    }
+    thead {
+      background: #2e86de;
+      color: #fff;
+    }
+    thead th {
+      text-align: left;
+      padding: 12px;
+      font-size: 14px;
+    }
+    tbody td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    .status {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .confirmada { background: #e8fbf3; color: #0f9d70; }
+    .pendente { background: #fff7e6; color: #a86b00; }
+    .cancelada { background: #fdecea; color: #c62828; }
+    .concluida { background: #e6f0ff; color: #2e5aac; }
+
+    .actions a {
+      margin-right: 10px;
+      font-size: 13px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .actions .ver { color: #2e86de; }
+    .actions .editar { color: #00b894; }
+    .actions .cancelar { color: #c62828; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Saúde & Fitness</h1>
+    <nav>
+      <a href="painel-cliente.html">Painel</a>
+      <a href="#">Meus Dados</a>
+      <a href="#">Sair</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="title">
+      <h2>Minhas Consultas</h2>
+      <p>Acompanhe suas consultas já agendadas, veja horários e faça alterações quando necessário.</p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Profissional</th>
+          <th>Especialidade</th>
+          <th>Data & Hora</th>
+          <th>Status</th>
+          <th>Atendimento</th>
+          <th>Valor</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ana Nogueira</td>
+          <td>Nutricionista</td>
+          <td>10/09/2025 • 14:00</td>
+          <td><span class="status confirmada">Confirmada</span></td>
+          <td>Online</td>
+          <td>R$ 120</td>
+          <td class="actions">
+            <a href="#" class="ver">Ver</a>
+            <a href="#" class="editar">Reagendar</a>
+            <a href="#" class="cancelar">Cancelar</a>
+          </td>
+        </tr>
+        <tr>
+          <td>João Pereira</td>
+          <td>Personal Trainer</td>
+          <td>11/09/2025 • 08:30</td>
+          <td><span class="status pendente">Pendente</span></td>
+          <td>Presencial</td>
+          <td>R$ 90</td>
+          <td class="actions">
+            <a href="#" class="ver">Ver</a>
+            <a href="#" class="editar">Reagendar</a>
+            <a href="#" class="cancelar">Cancelar</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Carla Lima</td>
+          <td>Nutricionista</td>
+          <td>09/09/2025 • 19:00</td>
+          <td><span class="status concluida">Concluída</span></td>
+          <td>Online</td>
+          <td>R$ 140</td>
+          <td class="actions">
+            <a href="#" class="ver">Ver</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Rafael Martins</td>
+          <td>Personal Trainer</td>
+          <td>08/09/2025 • 07:00</td>
+          <td><span class="status cancelada">Cancelada</span></td>
+          <td>Presencial</td>
+          <td>R$ 80</td>
+          <td class="actions">
+            <a href="#" class="ver">Ver</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

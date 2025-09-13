@@ -1,0 +1,125 @@
+
+    /* Reset */
+
+
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #2e86de, #00b894);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffeaa7;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      color: #2e86de;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #2e86de;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #00b894;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #00b894;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  

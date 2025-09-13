@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Consultas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background: #2c3e50;
+      color: white;
+    }
+    tr:hover {
+      background: #f1f1f1;
+    }
+    .status {
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    .confirmada {
+      color: #27ae60;
+    }
+    .pendente {
+      color: #e67e22;
+    }
+    .cancelada {
+      color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agenda de Consultas</h1>
+  </header>
+
+  <main>
+    <h2>Confira suas consultas agendadas</h2>
+    <p style="text-align:center;">Organize seus horários de atendimento e acompanhe seus clientes.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Data</th>
+          <th>Horário</th>
+          <th>Tipo</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maria Silva</td>
+          <td>12/09/2025</td>
+          <td>09:00</td>
+          <td>Nutrição</td>
+          <td><span class="status confirmada">Confirmada</span></td>
+        </tr>
+        <tr>
+          <td>João Pereira</td>
+          <td>12/09/2025</td>
+          <td>14:00</td>
+          <td>Treino</td>
+          <td><span class="status pendente">Pendente</span></td>
+        </tr>
+        <tr>
+          <td>Ana Souza</td>
+          <td>13/09/2025</td>
+          <td>10:00</td>
+          <td>Avaliação Física</td>
+          <td><span class="status cancelada">Cancelada</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

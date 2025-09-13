@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Dados - Cliente</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2e86de, #00b894);
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeaa7;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2e86de;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field-group {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      flex: 1;
+    }
+
+    input {
+      flex: 3;
+      padding: 10px;
+      margin: 5px 10px 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input:disabled {
+      background: #f1f1f1;
+      color: #666;
+    }
+
+    .edit-btn {
+      padding: 8px 12px;
+      background: #2e86de;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .edit-btn:hover {
+      background: #00b894;
+    }
+
+    .btn-save {
+      margin-top: 25px;
+      padding: 12px;
+      background: #2e86de;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-save:hover {
+      background: #00b894;
+    }
+
+    footer {
+      background: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Saúde & Fitness</h1>
+    <nav>
+      <a href="painel-cliente.html">Voltar ao Painel</a>
+      <a href="#">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Meus Dados</h2>
+    <form>
+      <div class="field-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" value="Maria da Silva" disabled>
+        <button type="button" class="edit-btn">Editar</button>
+      </div>
+
+      <div class="field-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" value="maria.silva@email.com" disabled>
+        <button type="button" class="edit-btn">Editar</button>
+      </div>
+
+      <div class="field-group">
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" value="27" disabled>
+        <button type="button" class="edit-btn">Editar</button>
+      </div>
+
+      <div class="field-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" value="(11) 98765-4321" disabled>
+        <button type="button" class="edit-btn">Editar</button>
+      </div>
+
+      <div class="field-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" value="Rua das Flores, 123 - São Paulo/SP" disabled>
+        <button type="button" class="edit-btn">Editar</button>
+      </div>
+
+      <div class="field-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" value="********" disabled>
+        <button type="button" class="edit-btn">Editar</button>
+      </div>
+
+      <button type="submit" class="btn-save">Salvar Alterações</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Saúde & Fitness - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
